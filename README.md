@@ -4,21 +4,24 @@ Each repository must include a README.md file with the following sections:
 
 🔹 Project Title
        CARDINAL SYSTEM
+
 🔹 Description
 Explain: 
-       This system is inspired by anime called sword art online, and this system is about VRMMORPG (Virtual Reality Massively Multiplayer Online Role-Playing Game). This system is for a player and the purpose of this system is for the player to check or see his\her stats.
+      - This system is inspired by anime called sword art online, and this system is about VRMMORPG (Virtual Reality Massively Multiplayer Online Role-Playing Game). This system is for a player and the purpose of this system is for the player to check or see his\her stats.
 
 🔹 Technologies Used
 Example:
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
+
 🔹 Features
 List at least 3 features of your landing page.
 Example:
 Responsive layout
 Call-to-action button
 Clean UI design
+
 🔹 AI Assistance Disclosure (Required)
 Answer honestly:
 Did you use AI tools? (Yes / No)
@@ -31,6 +34,7 @@ What was the most challenging part?
    - The most challenging part on this landing page is to think what to make or create, luckily I recently watch sword art online and I am able to create this landing page.
 
  
+
 
 
 
