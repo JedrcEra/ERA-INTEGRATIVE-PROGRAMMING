@@ -20,14 +20,15 @@ Example:
 - JavaScript
 
 🔹 Features
+
 List at least 3 features of your landing page.
 
-Example:
+- Responsive layout
 
-Responsive layout
-Call-to-action button
-Clean UI design
+- Call-to-action button
 
+- Sci-fi HUD-style design
+- 
 🔹 AI Assistance Disclosure (Required)
 Answer honestly:
 Did you use AI tools? (Yes / No)
@@ -43,6 +44,7 @@ What was the most challenging part?
    - The most challenging part on this landing page is to think what to make or create, luckily I recently watch sword art online and I am able to create this landing page.
 
  
+
 
 
 
