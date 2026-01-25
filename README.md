@@ -18,7 +18,7 @@ Example:
 - HTML
 - CSS
 - JavaScript
-
+  
 🔹 Features
 
 List at least 3 features of your landing page.
@@ -28,15 +28,16 @@ List at least 3 features of your landing page.
 - Call-to-action button
 
 - Sci-fi HUD-style design
-- 
+
 🔹 AI Assistance Disclosure (Required)
 Answer honestly:
 Did you use AI tools? (Yes / No)
   - Yes, I use AI on javascript to make my website a bit cooler and some styling on css
-  - 
+    
 Answer briefly:
 
 What did you learn from this activity?
+
 What was the most challenging part?
 (2–3 sentences)
 
@@ -44,6 +45,7 @@ What was the most challenging part?
    - The most challenging part on this landing page is to think what to make or create, luckily I recently watch sword art online and I am able to create this landing page.
 
  
+
 
 
 
