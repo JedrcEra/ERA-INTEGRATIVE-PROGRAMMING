@@ -30,9 +30,12 @@ List at least 3 features of your landing page.
 - Sci-fi HUD-style design
 
 🔹 AI Assistance Disclosure (Required)
+
 Answer honestly:
+
 Did you use AI tools? (Yes / No)
-  - Yes, I use AI on javascript to make my website a bit cooler and some styling on css
+
+  - Yes, I use AI on some styling on css and debugging since sometimes it wont run.
     
 Answer briefly:
 
@@ -45,6 +48,7 @@ What was the most challenging part?
    - The most challenging part on this landing page is to think what to make or create, luckily I recently watch sword art online and I am able to create this landing page.
 
  
+
 
 
 
