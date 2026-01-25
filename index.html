@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardinal System | Underworld</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eum vel. Laudantium laborum labore dolore, quod sed modi aut nisi dolorum dignissimos rerum. Rerum, eum cum. Ad quod aliquid quas?</p>
-    <button class="delete">delete</button>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="logo">CARDINAL SYSTEM</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#status">Status</a>
+      <a href="#inventory">Inventory</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+    <div class="system-overlay">
+  <span>SYSTEM ONLINE</span>
+  <span>LINK STABLE</span>
+  <span>AUTH: VERIFIED</span>
+</div>
+
+  <section class="hero" id="home">
+    <div class="hud-panel hero-panel">
+      <h1>FULLDIVE INTERFACE</h1>
+      <p>
+        Welcome to the Underworld.<br />
+        A virtual system governed by logic, memory, and will.
+      </p>
+      <button class="cta">ACCESS SYSTEM</button>
+    </div>
+  </section>
+
+
+  <section class="status" id="status">
+    <h2 class="section-title">USER STATUS</h2>
+
+    <div class="hud-panel status-panel">
+      <div class="avatar"></div>
+
+      <div class="stats">
+        <p><strong>Name:</strong> Jedric Era</p>
+        <p><strong>Class:</strong> Swordsman</p>
+        <p><strong>Title:</strong> Black Swordsman</p>
+
+        <div class="bar">
+          <span>HP</span>
+          <div class="progress hp"></div>
+        </div>
+
+        <div class="bar">
+          <span>MP</span>
+          <div class="progress mp"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="inventory" id="inventory">
+    <h2 class="section-title">INVENTORY</h2>
+
+    <div class="inventory-grid">
+      <div class="hud-panel item">
+        <h3>Weapon</h3>
+        <p>Main combat equipment.</p>
+      </div>
+
+      <div class="hud-panel item">
+        <h3>Item</h3>
+        <p>Consumable resources.</p>
+      </div>
+
+      <div class="hud-panel item">
+        <h3>Skill</h3>
+        <p>Unlocked sword arts.</p>
+      </div>
+
+      <div class="hud-panel item locked">
+        <h3>Artifact</h3>
+        <p>Locked – Authorization required</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer id="contact">
+    <p>Cardinal System Interface • Designed by Jedric Era © 2026</p>
+    <p>Inspired by Sword Art Online</p>
+  </footer>
+
 </body>
 </html>
