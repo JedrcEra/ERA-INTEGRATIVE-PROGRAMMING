@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- AUTH SECTION -->
+<section class="auth" id="auth">
+  <div class="hud-panel auth-panel">
+
+    <!-- LOGIN -->
+    <div class="auth-box login active">
+      <h2>USER LOGIN</h2>
+
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+
+      <button class="cta"><a href="index.html">LOGIN</a></button>
+
+      <p class="switch">
+        New user?
+        <span onclick="toggleAuth()">Create Account</span>
+      </p>
+    </div>
+
+    <!-- SIGN UP -->
+    <div class="auth-box signup">
+      <h2>CREATE ACCOUNT</h2>
+
+      <input type="text" placeholder="Username" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+
+      <button class="cta">REGISTER</button>
+
+      <p class="switch">
+        Already registered?
+        <span onclick="toggleAuth()">Login</span>
+      </p>
+    </div>
+
+  </div>
+</section>
+<script>
+  function toggleAuth() {
+    document.querySelector(".login").classList.toggle("active");
+    document.querySelector(".signup").classList.toggle("active");
+  }
+
+  // Optional: ACCESS SYSTEM scroll
+  document.querySelector(".cta").onclick = () => {
+    document.getElementById("auth").scrollIntoView({ behavior: "smooth" });
+  };
+</script>
+
+</body>
+</html>
