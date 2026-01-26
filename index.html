@@ -16,14 +16,14 @@
       <a href="#status">Status</a>
       <a href="#inventory">Inventory</a>
       <a href="#contact">Contact</a>
-      <a href="#" onclick="openAuth(); return false;">SYSTEM LOGIN</a>
+      <a href="login.html" onclick="openAuth(); return false;">SYSTEM LOGIN</a>
       <a href="#" onclick="openSignup(); return false;">NEW ACCOUNT INITIALIZATION</a>
     </nav>
   </header>
 
   <div class="system-overlay">
     <span>SYSTEM ONLINE</span>
-    <span>LINK STABLE</span>
+    <span>LINK STABLE</span>s
     <span>AUTH: VERIFIED</span>
   </div>
 
@@ -97,76 +97,7 @@
     <p>Inspired by Sword Art Online</p>
   </footer>
 
-  <!-- AUTH OVERLAY -->
-  <div class="auth-overlay" id="authOverlay">
-
-    <div class="hud-panel auth-panel">
-
-      <!-- LOGIN -->
-      <div class="auth-box login active">
-        <h2>USER AUTHENTICATION</h2>
-
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-
-        <button class="cta">LOGIN</button>
-
-        <p class="switch">
-          New user?
-          <span onclick="toggleAuth()">Create Account</span>
-        </p>
-      </div>
-
-      <!-- SIGN UP -->
-      <div class="auth-box signup">
-        <h2>NEW USER REGISTRATION</h2>
-
-        <input type="text" placeholder="Username" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-
-        <button class="cta">REGISTER</button>
-
-        <p class="switch">
-          Already registered?
-          <span onclick="toggleAuth()">Login</span>
-        </p>
-      </div>
-
-    </div>
-  </div>
-<script>
-  const overlay = document.getElementById("authOverlay");
-  const loginBox = document.querySelector(".login");
-  const signupBox = document.querySelector(".signup");
-
-  function openAuth() {
-    overlay.classList.add("active");
-    loginBox.classList.add("active");
-    signupBox.classList.remove("active");
-  }
-
-  function openSignup() {
-    overlay.classList.add("active");
-    signupBox.classList.add("active");
-    loginBox.classList.remove("active");
-  }
-
-  function toggleAuth() {
-    loginBox.classList.toggle("active");
-    signupBox.classList.toggle("active");
-  }
-
-  overlay.addEventListener("click", e => {
-    if (e.target === overlay) overlay.classList.remove("active");
-  });
-
-  document.querySelector(".hero-cta").addEventListener("click", openAuth);
-
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape") overlay.classList.remove("active");
-  });
-</script>
+ 
 
 </body>
 </html>

@@ -325,3 +325,57 @@ footer {
 .switch span:hover {
   text-decoration: underline;
 }
+/* AUTH SYSTEM */
+.auth {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-panel {
+  width: 420px;
+  text-align: center;
+}
+
+.auth-box {
+  display: none;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-box.active {
+  display: flex;
+}
+
+.auth-box h2 {
+  letter-spacing: 3px;
+  color: #ffb3b3;
+  margin-bottom: 20px;
+}
+
+.auth-box input {
+  padding: 12px;
+  background: rgba(20, 0, 0, 0.8);
+  border: 1px solid rgba(255, 120, 120, 0.4);
+  color: #ffcccc;
+  font-family: "Orbitron", sans-serif;
+  outline: none;
+}
+
+.auth-box input::placeholder {
+  color: #cc7777;
+}
+
+.switch {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+.switch span {
+  color: #ff8080;
+  cursor: pointer;
+}
+.switch span:hover {
+  text-decoration: underline;
+}

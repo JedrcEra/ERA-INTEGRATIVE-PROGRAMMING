@@ -4,57 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- AUTH SECTION -->
-<section class="auth" id="auth">
-  <div class="hud-panel auth-panel">
+ <!-- AUTH OVERLAY -->
+  <div class="auth-overlay" id="authOverlay">
 
-    <!-- LOGIN -->
-    <div class="auth-box login active">
-      <h2>USER LOGIN</h2>
+    <div class="hud-panel auth-panel">
 
-      <input type="text" placeholder="Username" />
-      <input type="password" placeholder="Password" />
+      <!-- LOGIN -->
+      <div class="auth-box login active">
+        <h2>USER AUTHENTICATION</h2>
 
-      <button class="cta"><a href="index.html">LOGIN</a></button>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
 
-      <p class="switch">
-        New user?
-        <span onclick="toggleAuth()">Create Account</span>
-      </p>
+        <button class="cta"><a href="">LOGIN</a></button>
+
+        <p class="switch">
+          New user?
+          <span onclick="toggleAuth()">Create Account</span>
+        </p>
+      </div>
+
+      <!-- SIGN UP -->
+      <div class="auth-box signup">
+        <h2>NEW USER REGISTRATION</h2>
+
+        <input type="text" placeholder="Username" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+
+        <button class="cta">REGISTER</button>
+
+        <p class="switch">
+          Already registered?
+          <span onclick="toggleAuth()">Login</span>
+        </p>
+      </div>
+
     </div>
-
-    <!-- SIGN UP -->
-    <div class="auth-box signup">
-      <h2>CREATE ACCOUNT</h2>
-
-      <input type="text" placeholder="Username" />
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-
-      <button class="cta">REGISTER</button>
-
-      <p class="switch">
-        Already registered?
-        <span onclick="toggleAuth()">Login</span>
-      </p>
-    </div>
-
   </div>
-</section>
-<script>
-  function toggleAuth() {
-    document.querySelector(".login").classList.toggle("active");
-    document.querySelector(".signup").classList.toggle("active");
-  }
-
-  // Optional: ACCESS SYSTEM scroll
-  document.querySelector(".cta").onclick = () => {
-    document.getElementById("auth").scrollIntoView({ behavior: "smooth" });
-  };
-</script>
 
 </body>
 </html>
