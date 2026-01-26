@@ -63,6 +63,18 @@ body::after {
   color: #f2cccc;
   position: relative;
 }
+.nav a.logout {
+  color: #ff4d4d;
+  letter-spacing: 2px;
+}
+
+.nav a.logout::after {
+  background: #ff3333;
+}
+
+.nav a.logout:hover {
+  text-shadow: 0 0 8px rgba(255, 80, 80, 0.8);
+}
 .nav a::after {
   content: "";
   position: absolute;
@@ -234,4 +246,82 @@ footer {
   text-align: center;
   background: #0a0000;
   border-top: 1px solid rgba(255,120,120,0.3);
+}
+
+/* AUTH OVERLAY */
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.auth-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.auth-panel {
+  width: 420px;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.auth-box {
+  display: none;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-box.active {
+  display: flex;
+}
+
+.auth-box h2 {
+  letter-spacing: 3px;
+  color: #ffb3b3;
+}
+
+.auth-box input {
+  padding: 12px;
+  background: rgba(20, 0, 0, 0.9);
+  border: 1px solid rgba(255, 120, 120, 0.4);
+  color: #ffcccc;
+  font-family: "Orbitron", sans-serif;
+  outline: none;
+}
+
+.auth-box input::placeholder {
+  color: #cc7777;
+}
+
+.switch {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+.switch span {
+  color: #ff8080;
+  cursor: pointer;
+}
+.switch span:hover {
+  text-decoration: underline;
 }
