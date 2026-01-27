@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Login | Cardinal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
- <!-- AUTH OVERLAY -->
-  <div class="auth-overlay" id="authOverlay">
+<body class="auth">
 
-    <div class="hud-panel auth-panel">
+<header class="nav">
+  <div class="logo">CARDINAL SYSTEM</div>
+  <nav>
+    <a href="index.html">Return</a>
+  </nav>
+</header>
 
-      <!-- LOGIN -->
-      <div class="auth-box login active">
-        <h2>USER AUTHENTICATION</h2>
+<div class="hud-panel auth-panel">
 
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
+  <!-- LOGIN -->
+  <div class="auth-box login active">
+    <h2>USER AUTHENTICATION</h2>
 
-        <button class="cta"><a href="">LOGIN</a></button>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
 
-        <p class="switch">
-          New user?
-          <span onclick="toggleAuth()">Create Account</span>
-        </p>
-      </div>
+    <a href="index.html"><button class="cta">LOGIN</button></a>
 
-      <!-- SIGN UP -->
-      <div class="auth-box signup">
-        <h2>NEW USER REGISTRATION</h2>
-
-        <input type="text" placeholder="Username" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-
-        <button class="cta">REGISTER</button>
-
-        <p class="switch">
-          Already registered?
-          <span onclick="toggleAuth()">Login</span>
-        </p>
-      </div>
-
-    </div>
+    <p class="switch">
+      New user?
+      <span onclick="toggleAuth()">Create Account</span>
+    </p>
   </div>
+
+  <!-- SIGN UP -->
+  <div class="auth-box signup">
+    <h2>NEW USER REGISTRATION</h2>
+
+    <input type="text" placeholder="Username">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <button class="cta">REGISTER</button>
+
+    <p class="switch">
+      Already registered?
+      <span onclick="toggleAuth()">Login</span>
+    </p>
+  </div>
+
+</div>
+
+<script>
+function toggleAuth() {
+  document.querySelector(".login").classList.toggle("active");
+  document.querySelector(".signup").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
