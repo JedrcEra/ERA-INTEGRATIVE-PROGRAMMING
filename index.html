@@ -8,96 +8,82 @@
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="nav">
-    <div class="logo">CARDINAL SYSTEM</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#status">Status</a>
-      <a href="#inventory">Inventory</a>
-      <a href="#contact">Contact</a>
-      <a href="login.html" onclick="openAuth(); return false;">SYSTEM LOGIN</a>
-      <a href="#" onclick="openSignup(); return false;"></a>
-    </nav>
-  </header>
+<header class="nav">
+  <div class="logo">CARDINAL SYSTEM</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#status">Status</a>
+    <a href="#inventory">Inventory</a>
+    <a href="#contact">Contact</a>
+    <a href="login.html">SYSTEM LOGIN</a>
+  </nav>
+</header>
 
-  <div class="system-overlay">
-    <span>SYSTEM ONLINE</span>
-    <span>LINK STABLE</span>
-    <span>AUTH: VERIFIED</span>
+<div class="system-overlay">
+  <span>SYSTEM ONLINE</span>
+  <span>LINK STABLE</span>
+  <span>AUTH: VERIFIED</span>
+</div>
+
+<section class="hero" id="home">
+  <div class="hud-panel hero-panel">
+    <h1>FULLDIVE INTERFACE</h1>
+    <p>
+      Welcome to the Underworld.<br />
+      A virtual system governed by logic, memory, and will.
+    </p>
+    <a href="login.html" class="cta">ACCESS SYSTEM</a>
   </div>
+</section>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hud-panel hero-panel">
-      <h1>FULLDIVE INTERFACE</h1>
-      <p>
-        Welcome to the Underworld.<br />
-        A virtual system governed by logic, memory, and will.
-      </p>
-      <button class="cta hero-cta">ACCESS SYSTEM</button>
-    </div>
-  </section>
+<section class="status" id="status">
+  <h2 class="section-title">USER STATUS</h2>
+  <div class="hud-panel status-panel">
+    <div class="avatar"></div>
+    <div class="stats">
+      <p><strong>Name:</strong> Jedric Era</p>
+      <p><strong>Class:</strong> Swordsman</p>
+      <p><strong>Title:</strong> Black Swordsman</p>
 
-  <!-- STATUS -->
-  <section class="status" id="status">
-    <h2 class="section-title">USER STATUS</h2>
+      <div class="bar">
+        <span>HP</span>
+        <div class="progress hp"></div>
+      </div>
 
-    <div class="hud-panel status-panel">
-      <div class="avatar"></div>
-
-      <div class="stats">
-        <p><strong>Name:</strong> Jedric Era</p>
-        <p><strong>Class:</strong> Swordsman</p>
-        <p><strong>Title:</strong> Black Swordsman</p>
-
-        <div class="bar">
-          <span>HP</span>
-          <div class="progress hp"></div>
-        </div>
-
-        <div class="bar">
-          <span>MP</span>
-          <div class="progress mp"></div>
-        </div>
+      <div class="bar">
+        <span>MP</span>
+        <div class="progress mp"></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- INVENTORY -->
-  <section class="inventory" id="inventory">
-    <h2 class="section-title">INVENTORY</h2>
-
-    <div class="inventory-grid">
-      <div class="hud-panel item">
-        <h3>Weapon</h3>
-        <p>Main combat equipment.</p>
-      </div>
-
-      <div class="hud-panel item">
-        <h3>Item</h3>
-        <p>Consumable resources.</p>
-      </div>
-
-      <div class="hud-panel item">
-        <h3>Skill</h3>
-        <p>Unlocked sword arts.</p>
-      </div>
-
-      <div class="hud-panel item locked">
-        <h3>Artifact</h3>
-        <p>Locked – Authorization required</p>
-      </div>
+<section class="inventory" id="inventory">
+  <h2 class="section-title">INVENTORY</h2>
+  <div class="inventory-grid">
+    <div class="hud-panel item">
+      <h3>Weapon</h3>
+      <p>Main combat equipment.</p>
     </div>
-  </section>
+    <div class="hud-panel item">
+      <h3>Item</h3>
+      <p>Consumable resources.</p>
+    </div>
+    <div class="hud-panel item">
+      <h3>Skill</h3>
+      <p>Unlocked sword arts.</p>
+    </div>
+    <div class="hud-panel item locked">
+      <h3>Artifact</h3>
+      <p>Locked – Authorization required</p>
+    </div>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer id="contact">
-    <p>Cardinal System Interface • Designed by Jedric Era © 2026</p>
-    <p>Inspired by Sword Art Online</p>
-  </footer>
-
- 
+<footer id="contact">
+  <p>Cardinal System Interface • Designed by Jedric Era © 2026</p>
+  <p>Inspired by Sword Art Online</p>
+</footer>
 
 </body>
 </html>
