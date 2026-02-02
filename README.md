@@ -21,6 +21,7 @@ Answer honestly: Did you use AI tools? (Yes / No)
   - Yes, I use AI on some styling on css and debugging since sometimes i can't get the results that i want.
 
 🔹 Learning Reflection (Short) Answer briefly: What did you learn from this activity? What was the most challenging part? (2–3 sentences)
+
          - I learn a new idea and knowledge since I am able to create a landing page. The most challenging part on this landing page is to think what to make or create, luckily I recently watch sword art online and I am able to create this landing page.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ACTIVITY 2
@@ -49,6 +50,7 @@ If NO, state: “This project was created without the use of AI tools.”
 Activity 3
 
 so on and so forth
+
 
 
 
