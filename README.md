@@ -7,17 +7,21 @@ ACTVITY 1 January 21,2026
 
 🔹 CARDINAL SYSTEM
 🔹 Description Explain: 
+
        - This system is inspired by anime called sword art online, and this system is about VRMMORPG (Virtual Reality Massively Multiplayer Online Role-Playing Game). This system is for a player and the purpose of this system is for the player to check or see his\her stats.
 
 🔹 Technologies Used: HTML CSS
 
 🔹 Features List at least 3 features of your landing page.
+
        - Responsive layout
        - Call-to-action button
        - Sci-fi HUD-style design
 
 🔹 AI Assistance Disclosure (Required)
+
 Answer honestly: Did you use AI tools? (Yes / No)
+
   - Yes, I use AI on some styling on css and debugging since sometimes i can't get the results that i want.
 
 🔹 Learning Reflection (Short) Answer briefly: What did you learn from this activity? What was the most challenging part? (2–3 sentences)
@@ -50,6 +54,7 @@ If NO, state: “This project was created without the use of AI tools.”
 Activity 3
 
 so on and so forth
+
 
 
 
