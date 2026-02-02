@@ -40,16 +40,13 @@ ACTIVITY 2
 
        This login and signup system is used to control access to the Cardinal System.
 
-       The login page allows existing users to enter their username and password to access the system. It provides a simple and clear interface with only the required fields. A link is included for new users to move to the signup page.
-
-       The signup page is for new users who want to create an account. It collects a username, email address, and password. After registration, users can return to the login page.
+              - The login page allows existing users to enter their username and password to access the system. It provides a simple and clear interface with only the required fields. A link is included for new users to move to the signup page.
+              - The signup page is for new users who want to create an account. It collects a username, email address, and password. After registration, users can return to the login page.
 
 🔹 Features List at least 3 features of your signin / login if any.
 
        - Responsive layout
-
        - Clean UI design
-
        - Clear call-to-action buttons
 
 🔹 AI Assistance Disclosure (Required)
@@ -67,6 +64,7 @@ Answer honestly: Did you use AI tools? (Yes / No)
 Activity 3
 
 so on and so forth
+
 
 
 
