@@ -1,11 +1,13 @@
 # ERA-INTEGRATIVE-PROGRAMMING
 
 README.md
+
 Each repository must include a README.md file with the following sections:
 
 ACTVITY 1 January 21,2026
 
 🔹 CARDINAL SYSTEM
+
 🔹 Description Explain: 
 
        - This system is inspired by anime called sword art online, and this system is about VRMMORPG (Virtual Reality Massively Multiplayer Online Role-Playing Game). This system is for a player and the purpose of this system is for the player to check or see his\her stats.
@@ -54,6 +56,7 @@ If NO, state: “This project was created without the use of AI tools.”
 Activity 3
 
 so on and so forth
+
 
 
 
