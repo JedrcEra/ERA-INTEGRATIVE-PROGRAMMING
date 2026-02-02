@@ -26,7 +26,7 @@ ACTVITY 1 January 21,2026
 
 Answer honestly: Did you use AI tools? (Yes / No)
 
-  - Yes, I use AI on some styling on css and debugging since sometimes i can't get the results that i want.
+       - Yes, I use AI on some styling on css and debugging since sometimes i can't get the results that i want.
 
 🔹 Learning Reflection (Short) Answer briefly: What did you learn from this activity? What was the most challenging part? (2–3 sentences)
 
@@ -58,6 +58,7 @@ If NO, state: “This project was created without the use of AI tools.”
 Activity 3
 
 so on and so forth
+
 
 
 
