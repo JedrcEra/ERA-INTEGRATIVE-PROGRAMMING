@@ -6,7 +6,9 @@ Each repository must include a README.md file with the following sections:
 
 ACTVITY 1 January 21,2026
 
-🔹 CARDINAL SYSTEM
+🔹 Landing Page
+
+       CARDINAL SYSTEM
 
 🔹 Description Explain: 
 
@@ -56,6 +58,7 @@ If NO, state: “This project was created without the use of AI tools.”
 Activity 3
 
 so on and so forth
+
 
 
 
