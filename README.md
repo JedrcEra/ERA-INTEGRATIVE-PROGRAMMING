@@ -63,7 +63,34 @@ Answer honestly: Did you use AI tools? (Yes / No)
 
 Activity 3
 
-so on and so forth
+🔹 Profile(Status) and Settings page
+
+🔹 Description Explain: 
+
+Status Page
+
+       The Status page shows the user’s profile information and system stats, including name, role, HP, MP, and account details. It allows users to view their current status and access the Settings page.
+
+Settings Page
+
+       The Settings page displays account options such as email, address, password, and theme. These features are currently disabled and reserved for future updates. Users can return to the profile page from this page.
+       
+🔹 Features List at least 3 features of your signin / login if any.
+
+       - Displays user status and profile information
+       - Allows access to settings
+       - Easy navigation
+
+🔹 AI Assistance Disclosure (Required)
+
+Answer honestly: Did you use AI tools? (Yes / No)
+
+       - Ye, I only used chatgpt for the open settings to put in the right direction.
+       
+🔹 Learning Reflection (Short) Answer briefly: What did you learn from this activity? What was the most challenging part? (2–3 sentences)
+
+       - 
+
 
 
 
