@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardinal System | Settings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">CARDINAL SYSTEM</div>
+  <nav>
+    <a href="login.html">System Logut</a>
+  </nav>
+</header>
+
+<section class="status">
+  <h2 class="section-title">SETTINGS</h2>
+
+  <div class="hud-panel" style="max-width: 600px; margin: auto;">
+    <form class="auth-box active">
+      
+      <label>
+        <strong>Change Email</strong><br />
+        <small>
+          This field will be synchronized with an external identity provider
+          in later phases.
+        </small>
+        <input
+          type="email"
+          placeholder="user@cardinal.system"
+          disabled
+        />
+      </label>
+
+      <label>
+        <strong>Change Address</strong><br />
+        <small>
+          Geographic data binding will be introduced in future builds.
+        </small>
+        <input
+          type="text"
+          placeholder="Underworld Sector"
+          disabled
+        />
+      </label>
+
+      <label>
+        <strong>Change Password</strong><br />
+        <small>
+          Argon2id hashing with memory-hard parameters will be activated
+          in future builds.
+        </small>
+        <input
+          type="password"
+          placeholder="********"
+          disabled
+        />
+      </label>
+
+      <label>
+        <strong>Theme</strong><br />
+        <select disabled>
+          <option>Cardinal Dark (Default)</option>
+          <option>Light Mode (Locked)</option>
+          <option>High Contrast (Locked)</option>
+        </select>
+      </label>
+
+      <button type="button" class="cta" style="margin-top: 20px;" disabled>
+        SAVE SETTINGS
+      </button>
+    </form>
+  </div>
+
+  <div style="margin-top: 40px; text-align: center;">
+    <a href="profile.html" class="cta">← BACK TO PROFILE</a>
+  </div>
+</section>
+
+<footer>
+  <p>Cardinal System Interface • Designed by Jedric Era © 2026</p>
+</footer>
+
+</body>
+</html>

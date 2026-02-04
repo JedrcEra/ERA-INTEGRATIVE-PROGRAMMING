@@ -231,6 +231,9 @@ body::after {
 .bar {
   margin-top: 15px;
 }
+.info{
+  margin-bottom: 15px;
+}
 
 .progress {
   height: 8px;
