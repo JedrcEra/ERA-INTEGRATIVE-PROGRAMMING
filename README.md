@@ -34,30 +34,64 @@ Answer honestly: Did you use AI tools? (Yes / No)
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ACTIVITY 2
 
-🔹 Activity name (eg Login and Signup page linking)
-🔹 Description Explain: What the landing page is about Who it is for What problem it solves or purpose it serves (3–5 sentences only)
-🔹 Technologies Used Example: HTML5 CSS3 JavaScript (optional)
+🔹 Login and Signup Page
 
-🔹 Features List at least 3 features of your landing page.
+🔹 Description Explain: 
 
-Example: Responsive layout Call-to-action button Clean UI design
+       This login and signup system is used to control access to the Cardinal System.
+
+              - The login page allows existing users to enter their username and password to access the system. It provides a simple and clear interface with only the required fields. A link is included for new users to move to the signup page.
+              - The signup page is for new users who want to create an account. It collects a username, email address, and password. After registration, users can return to the login page.
+
+🔹 Features List at least 3 features of your signin / login if any.
+
+       - Responsive layout
+       - Clean UI design
+       - Clear call-to-action buttons
 
 🔹 AI Assistance Disclosure (Required)
+
 Answer honestly: Did you use AI tools? (Yes / No)
 
-If YES, specify: What AI tool you used What it helped you with (e.g., layout ideas, CSS styling, text content, debugging)
-
-Example: “I used ChatGPT to help generate CSS layout ideas and improve wording for the hero section.
-All code was reviewed and modified by me.”
-
-If NO, state: “This project was created without the use of AI tools.”
+       - Ye, I used chatgpt for my login page since the create a new website which leads to signup page won't work.
+       
 🔹 Learning Reflection (Short) Answer briefly: What did you learn from this activity? What was the most challenging part? (2–3 sentences)
 
+       - I learn to be patient, especially when the I can't access the signup page from login page so I ask AI for help.
+       
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 Activity 3
 
-so on and so forth
+🔹 Profile(Status) and Settings page
+
+🔹 Description Explain: 
+
+Status Page
+
+       The Status page shows the user’s profile information and system stats, including name, role, HP, MP, and account details. It allows users to view their current status and access the Settings page.
+
+Settings Page
+
+       The Settings page displays account options such as email, address, password, and theme. These features are currently disabled and reserved for future updates. Users can return to the profile page from this page.
+       
+🔹 Features List at least 3 features of your status / settings if any.
+
+       - Displays user status and profile information
+       - Allows access to settings
+       - Easy navigation
+
+🔹 AI Assistance Disclosure (Required)
+
+Answer honestly: Did you use AI tools? (Yes / No)
+
+       - Ye, I only used chatgpt for the open settings to put in the right direction.
+       
+🔹 Learning Reflection (Short) Answer briefly: What did you learn from this activity? What was the most challenging part? (2–3 sentences)
+
+       - 
+
+
 
 
 
