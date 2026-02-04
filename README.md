@@ -75,7 +75,7 @@ Settings Page
 
        The Settings page displays account options such as email, address, password, and theme. These features are currently disabled and reserved for future updates. Users can return to the profile page from this page.
        
-🔹 Features List at least 3 features of your signin / login if any.
+🔹 Features List at least 3 features of your status / settings if any.
 
        - Displays user status and profile information
        - Allows access to settings
@@ -90,6 +90,7 @@ Answer honestly: Did you use AI tools? (Yes / No)
 🔹 Learning Reflection (Short) Answer briefly: What did you learn from this activity? What was the most challenging part? (2–3 sentences)
 
        - 
+
 
 
 
