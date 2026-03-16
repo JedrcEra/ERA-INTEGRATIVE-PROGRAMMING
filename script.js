@@ -23,3 +23,29 @@ if (loginForm) {
     window.location.href = "index.html";
   });
 }
+// delete user
+function deleteUser(button){
+    button.parentElement.parentElement.remove();
+}
+
+// simulate add user
+document.getElementById("userForm")?.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    alert("User Added Successfully!");
+});
+function login(){
+
+let username = document.getElementById("username").value;
+let password = document.getElementById("password").value;
+
+// example login
+
+if(username === "admin" && password === "admin123"){
+    window.location.href = "admin.html";
+}
+else{
+    window.location.href = "profile.html";
+}
+
+}

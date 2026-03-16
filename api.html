@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Data | Cardinal System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="logo">CARDINAL SYSTEM</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="api.html">World Data</a>
+  </nav>
+</header>
+
+<section class="status">
+
+<h2 class="section-title">COUNTRY DATABASE</h2>
+
+<div class="hud-panel" style="max-width:600px;margin:auto;text-align:center;">
+
+<p>Search a country to retrieve system data.</p>
+
+<input type="text" id="countryInput" placeholder="Enter country name">
+
+<br><br>
+
+<button class="cta" onclick="searchCountry()">SEARCH</button>
+
+<div id="result" style="margin-top:30px;"></div>
+
+</div>
+
+</section>
+
+<footer>
+<p>Cardinal System Interface • Designed by Jedric Era © 2026</p>
+</footer>
+
+<script>
+    async function searchCountry(){
+
+const countryName = document.getElementById("countryInput").value.trim();
+const result = document.getElementById("result");
+
+if(countryName === ""){
+    result.innerHTML = "Please enter a country name.";
+    return;
+}
+
+result.innerHTML = "Searching database...";
+
+try{
+
+const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
+
+if(!response.ok){
+    throw new Error("Country not found");
+}
+
+const data = await response.json();
+
+const country = data[0];
+
+result.innerHTML = `
+<h3>${country.name.common}</h3>
+<img src="${country.flags.png}" width="120">
+<p><strong>Capital:</strong> ${country.capital}</p>
+<p><strong>Region:</strong> ${country.region}</p>
+<p><strong>Population:</strong> ${country.population}</p>
+`;
+
+}
+catch(error){
+
+result.innerHTML = "Error: Country not found or API request failed.";
+
+}
+
+}
+</script>
+
+</body>
+</html>
