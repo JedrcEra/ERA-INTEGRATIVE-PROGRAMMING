@@ -129,9 +129,64 @@ Answer honestly: Did you use AI tools? (Yes / No)
        
 🔹 Learning Reflection (Short) Answer briefly: What did you learn from this activity? What was the most challenging part? (2–3 sentences)
 
+----------------------------------------------------------------------------------------------------------------------------------------------
 
+Activity 5
 
+----------------------------------------------------------------------------------------------------------------------------------------------
 
+Activity 6
+
+🔹Cardinal System: Country Database
+
+🔹Description
+
+       The Cardinal System: Country Database is a simple web application that allows users to search for information about countries.
+       
+       The user enters the name of a country, and the system retrieves real-time data from an external API and displays details such as the country’s flag, capital city, region, and population.
+
+       This project demonstrates how API integration works in a web application by allowing the website to communicate with an external data source and display the information dynamically.
+
+🔹API Used
+
+       This project uses the REST Countries API.
+
+       The API provides public data about countries around the world, including:
+
+              - Country name
+              - National flag
+              - Capital city
+              - Region or continent
+              - Population
+       
+       The API does not require a private key, which makes it safe for use in frontend projects and GitHub Pages deployment.
+
+🔹Features
+
+       - Country Search
+       - Live Data Retrieval 
+       - Country Flag Display 
+        - Country Information
+
+🔹How to Use
+
+       Open the Cardinal System website.
+
+       Navigate to the World Data page.
+
+       Type the name of a country in the search field.
+
+       Click the Search button.
+
+       The system will display the country's flag, capital, region, and population.
+
+🔹Challenges Encountered
+
+       One of the challenges encountered during development was handling cases where the user enters an invalid country name or leaves the input field empty. Without proper handling, the page could display errors or no results.
+
+       To solve this, input validation and error handling were added in the JavaScript code. The system now displays clear messages when the input is invalid or when the API cannot find the requested country.
+
+       Another challenge was understanding how to properly use the fetch() function to retrieve and process JSON data from the API. This was resolved by studying how API responses work and correctly accessing the data fields.
 
 
 
