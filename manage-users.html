@@ -2,22 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Manage Users</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Users | Cardinal</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h2>Manage Users</h2>
+<header class="nav">
+  <div class="logo">CARDINAL SYSTEM</div>
+  <nav>
+    <a href="admin.html">Dashboard</a>
+    <a href="login.html">Logout</a>
+  </nav>
+</header>
 
-<table border="1">
+<section class="status">
+<h2 class="section-title">MANAGE USERS</h2>
+
+<div class="hud-panel">
+
+<!-- ✅ TABLE -->
+<table style="width:100%; text-align:center;">
+<thead>
 <tr>
 <th>ID</th>
 <th>Name</th>
 <th>Email</th>
 <th>Action</th>
 </tr>
+</thead>
 
+<tbody id="userTable">
 <tr>
 <td>1</td>
 <td>Ana</td>
@@ -31,14 +47,62 @@
 <td>juan@email.com</td>
 <td><button onclick="deleteUser(this)">Delete</button></td>
 </tr>
-
+</tbody>
 </table>
 
-<br>
+</div>
 
-<a href="add-user.html">Add User</a>
+<!-- ✅ ADD USER FORM -->
+<div class="hud-panel" style="margin-top:40px;">
+<h3>Add New User</h3>
+
+<form id="userForm">
+<input type="text" id="name" placeholder="Name" required>
+<input type="email" id="email" placeholder="Email" required>
+<input type="text" id="role" placeholder="Role" required>
+
+<button type="submit" class="cta">ADD USER</button>
+</form>
+
+</div>
+
+</section>
+
+<footer>
+<p>Cardinal System Interface • Designed by Jedric Era © 2026</p>
+</footer>
 
 <script src="script.js"></script>
+
+<script>
+// 🔒 Admin check
+if(localStorage.getItem("role") !== "admin"){
+    alert("Access denied.");
+    window.location.href = "login.html";
+}
+
+// ✅ Add user dynamically
+document.getElementById("userForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+
+    const table = document.getElementById("userTable");
+    const newRow = table.insertRow();
+
+    newRow.innerHTML = `
+        <td>${table.rows.length}</td>
+        <td>${name}</td>
+        <td>${email}</td>
+        <td><button onclick="deleteUser(this)">Delete</button></td>
+    `;
+
+    alert("User added successfully!");
+
+    this.reset();
+});
+</script>
 
 </body>
 </html>

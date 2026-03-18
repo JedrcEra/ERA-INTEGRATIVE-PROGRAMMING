@@ -2,22 +2,42 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Admin Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | Cardinal System</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Admin Dashboard</h1>
-<p>Welcome Admin</p>
-<p>Use the menu to manage system data.</p>
-
-<nav>
+<header class="nav">
+  <div class="logo">CARDINAL SYSTEM</div>
+  <nav>
+    <a href="index.html">Home</a>
     <a href="manage-users.html">Manage Users</a>
-    <a href="profile.html">Profile</a>
-    <a href="settings.html">Settings</a>
-    <a href="logout.html">Logout</a>
-</nav>
+    <a href="login.html">Logout</a>
+  </nav>
+</header>
+
+<section class="status">
+  <h2 class="section-title">ADMIN DASHBOARD</h2>
+
+  <div class="hud-panel" style="text-align:center;">
+    <h3>Welcome Admin</h3>
+    <p>Use the menu to manage system data.</p>
+  </div>
+</section>
+
+<footer>
+<p>Cardinal System Interface • Designed by Jedric Era © 2026</p>
+</footer>
+
+<script>
+// 🔒 Simple Admin Protection
+if(localStorage.getItem("role") !== "admin"){
+    alert("Access denied. Admins only.");
+    window.location.href = "login.html";
+}
+</script>
 
 </body>
 </html>

@@ -14,6 +14,7 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="api.html">World Data</a>
+    <a href="save.html">Saved</a>
   </nav>
 </header>
 
@@ -72,6 +73,14 @@ result.innerHTML = `
 <p><strong>Capital:</strong> ${country.capital}</p>
 <p><strong>Region:</strong> ${country.region}</p>
 <p><strong>Population:</strong> ${country.population}</p>
+
+<button class="cta" onclick='saveCountry(
+"${country.name.common}",
+"${country.capital}",
+"${country.region}",
+"${country.population}",
+"${country.flags.png}"
+)'>SAVE COUNTRY</button>
 `;
 
 }
@@ -81,6 +90,32 @@ result.innerHTML = "Error: Country not found or API request failed.";
 
 }
 
+}
+function saveCountry(name, capital, region, population, flag){
+
+let saved = JSON.parse(localStorage.getItem("countries")) || [];
+
+// ✅ Prevent duplicates
+if(saved.some(country => country.name === name)){
+    alert("Already saved!");
+    return;
+}
+
+// ✅ Store data
+const newCountry = {
+    name,
+    capital,
+    region,
+    population,
+    flag
+};
+
+saved.push(newCountry);
+
+// ✅ Save to localStorage
+localStorage.setItem("countries", JSON.stringify(saved));
+
+alert("Saved successfully!");
 }
 </script>
 

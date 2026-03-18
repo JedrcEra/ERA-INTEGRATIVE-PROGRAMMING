@@ -1,4 +1,6 @@
-// Login Validation
+// =======================
+// LOGIN SYSTEM
+// =======================
 const loginForm = document.getElementById("loginForm");
 
 if (loginForm) {
@@ -8,6 +10,7 @@ if (loginForm) {
     const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value.trim();
 
+    // Validation
     if (username === "" || password === "") {
       alert("All fields are required.");
       return;
@@ -18,34 +21,60 @@ if (loginForm) {
       return;
     }
 
-    // If validation passes
-    alert("Login successful!");
-    window.location.href = "index.html";
+    // Admin login
+    if (username === "admin" && password === "admin123") {
+      localStorage.setItem("role", "admin");
+      alert("Admin login successful!");
+      window.location.href = "admin.html";
+    } 
+    // Normal user login
+    else {
+      localStorage.setItem("role", "user");
+      alert("Login successful!");
+      window.location.href = "profile.html";
+    }
   });
 }
-// delete user
-function deleteUser(button){
+
+
+// =======================
+// DELETE USER (Admin)
+// =======================
+function deleteUser(button) {
+  if (confirm("Are you sure you want to delete this user?")) {
     button.parentElement.parentElement.remove();
+  }
 }
 
-// simulate add user
-document.getElementById("userForm")?.addEventListener("submit", function(e){
+
+// =======================
+// ADD USER (Admin)
+// =======================
+const userForm = document.getElementById("userForm");
+
+if (userForm) {
+  userForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    alert("User Added Successfully!");
-});
-function login(){
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
 
-let username = document.getElementById("username").value;
-let password = document.getElementById("password").value;
+    if (name === "" || email === "") {
+      alert("Please fill in all fields.");
+      return;
+    }
 
-// example login
+    const table = document.getElementById("userTable");
+    const newRow = table.insertRow();
 
-if(username === "admin" && password === "admin123"){
-    window.location.href = "admin.html";
-}
-else{
-    window.location.href = "profile.html";
-}
+    newRow.innerHTML = `
+      <td>${table.rows.length}</td>
+      <td>${name}</td>
+      <td>${email}</td>
+      <td><button onclick="deleteUser(this)">Delete</button></td>
+    `;
 
+    alert("User added successfully!");
+    userForm.reset();
+  });
 }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saved Countries | Cardinal System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="logo">CARDINAL SYSTEM</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="api.html">World Data</a>
+  </nav>
+</header>
+
+<section class="status">
+<h2 class="section-title">SAVED COUNTRIES</h2>
+
+<div id="savedList" class="inventory-grid"></div>
+
+</section>
+
+<footer>
+<p>Cardinal System Interface • Designed by Jedric Era © 2026</p>
+</footer>
+
+<script>
+
+function displaySaved(){
+
+const container = document.getElementById("savedList");
+const saved = JSON.parse(localStorage.getItem("countries")) || [];
+
+if(saved.length === 0){
+    container.innerHTML = "<p>No saved items yet.</p>";
+    return;
+}
+
+container.innerHTML = "";
+
+saved.forEach((country, index) => {
+
+container.innerHTML += `
+<div class="hud-panel item">
+<h3>${country.name}</h3>
+<img src="${country.flag}" width="100">
+<p><strong>Capital:</strong> ${country.capital}</p>
+<p><strong>Region:</strong> ${country.region}</p>
+<p><strong>Population:</strong> ${country.population}</p>
+
+<button class="cta" onclick="deleteCountry(${index})">DELETE</button>
+</div>
+`;
+
+});
+
+}
+
+function deleteCountry(index){
+
+let saved = JSON.parse(localStorage.getItem("countries")) || [];
+
+saved.splice(index, 1);
+
+localStorage.setItem("countries", JSON.stringify(saved));
+
+displaySaved();
+
+}
+
+displaySaved();
+
+</script>
+
+</body>
+</html>
