@@ -133,6 +133,25 @@ Answer honestly: Did you use AI tools? (Yes / No)
 
 Activity 5
 
+🔹 Admin Page
+
+🔹 Description Explain: 
+
+       This project adds an admin feature to the Cardinal System website where an admin can manage user data. After logging in with admin credentials, the user is redirected to the Admin Dashboard, where they can view, add, and delete users in a simple table. The system uses basic HTML, CSS, and JavaScript to simulate how real admin pages work, and access is restricted so only the admin can open these pages.
+       
+🔹 Features List at least 3 features of your admin if any.
+
+       - Shows user info (name, class, email, address)
+       - Displays HP and MP status bars
+       - Has a Settings page with account options
+
+ 🔹 Technologies Used: HTML JavaScript   
+
+🔹 AI Assistance Disclosure (Required)
+
+Answer honestly: Did you use AI tools? (Yes / No)
+
+       - Ye, I only used chatgpt for the javascript since i don't have much experience coding on javascript
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 Activity 6
