@@ -156,56 +156,67 @@ Answer honestly: Did you use AI tools? (Yes / No)
 
 Activity 6
 
-🔹Cardinal System: Country Database
+🔹Cardinal System: Floor Database
 
 🔹Description
 
-       The Cardinal System: Country Database is a simple web application that allows users to search for information about countries.
-       
-       The user enters the name of a country, and the system retrieves real-time data from an external API and displays details such as the country’s flag, capital city, region, and population.
+       The Cardinal System: Floor Database is a simple web application that allows users to search and explore different floors.
 
-       This project demonstrates how API integration works in a web application by allowing the website to communicate with an external data source and display the information dynamically.
+       The user enters a floor number, and the system generates floor data dynamically and displays details such as the floor name, boss enemy, environment, and boss HP.
+
+       This project demonstrates how a game-like system works in a web application by using JavaScript to simulate data instead of relying on an external API. It shows how dynamic content, player interaction, and game mechanics can be handled directly in the frontend.
 
 🔹API Used
 
-       This project uses the REST Countries API.
+       This project uses a dynamic floor generation system inspired by Sword Art Online.
 
-       The API provides public data about countries around the world, including:
+       The system generates floor data automatically using JavaScript instead of fetching from an external API.
 
-              - Country name
-              - National flag
-              - Capital city
-              - Region or continent
-              - Population
-       
-       The API does not require a private key, which makes it safe for use in frontend projects and GitHub Pages deployment.
+       It provides floor information such as:
+
+              - Floor number
+              - Floor name
+              - Boss enemy
+              - Environment type
+              - Boss HP
+              
+      The system runs entirely on the frontend, making it safe for use in GitHub Pages without requiring an API key or internet connection.
 
 🔹Features
 
-       - Country Search
-       - Live Data Retrieval 
-       - Country Flag Display 
-        - Country Information
+       - Floor Search (1–100)
+       - Dynamic Floor Generation
+       - Player Level System
+       - Boss Fight System
+       - Weapon Progression
+       - Save Floor Data (LocalStorage)
 
 🔹How to Use
 
        Open the Cardinal System website.
 
-       Navigate to the World Data page.
+       Navigate to the Floor Database page.
 
-       Type the name of a country in the search field.
+       Enter a floor number between 1 and 100.
 
-       Click the Search button.
+       Click the SCAN FLOOR button.
 
-       The system will display the country's flag, capital, region, and population.
+       The system will display the floor details such as boss, environment, and HP.
+
+       If the floor is unlocked, you can:
+
+       - Click FIGHT to battle the boss              
+       - Click SAVE to store the floor data
 
 🔹Challenges Encountered
 
-       One of the challenges encountered during development was handling cases where the user enters an invalid country name or leaves the input field empty. Without proper handling, the page could display errors or no results.
+       One challenge during development was handling invalid inputs, such as entering a number outside the range (1–100) or leaving the input empty. Without validation, the system could break or show incorrect results.
 
-       To solve this, input validation and error handling were added in the JavaScript code. The system now displays clear messages when the input is invalid or when the API cannot find the requested country.
+       To solve this, input validation was added in JavaScript. The system now shows a clear message when the input is invalid.
 
-       Another challenge was understanding how to properly use the fetch() function to retrieve and process JSON data from the API. This was resolved by studying how API responses work and correctly accessing the data fields.
+       Another challenge was creating the fight system. Managing player HP, boss HP, and updating the progress bars in real time required proper use of setInterval() and DOM updates.
+
+       Additionally, designing the level progression and weapon upgrades required careful logic to ensure the game feels balanced and rewarding as the player clears more floors.
 
 
 
